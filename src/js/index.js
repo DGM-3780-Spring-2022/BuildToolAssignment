@@ -24,6 +24,7 @@ let todos = [
 
 const todoList = (todoItems) => {
     document.querySelector('.todoList')
+    async (todos) => {
     for (let i=0; i<=todoItems.length; i++) {
     let itemDiv = document.createAttribute('div')
     itemDiv.class = "newDivision"
@@ -44,12 +45,13 @@ const todoList = (todoItems) => {
     return itemDiv
     }
 }
+}
 
 todoList(todos);
 
-addTodos.addEventListener('click', () => {
+//addTodos.addEventListener('click', () => {
 
-});
+//});
 
 const editTodo = () => {
 
