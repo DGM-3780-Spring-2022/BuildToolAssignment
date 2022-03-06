@@ -4,23 +4,23 @@ function test(){
 
 test();
 
-let todos = [
-    {
-        id: 1,
-        item: "Do Homework",
-        complete: false,
-    },
-    {
-        id: 2,
-        item: "Search for Internships",
-        complete: false,
-    },
-    {
-        id: 3,
-        item: "Travel Home",
-        complete: false,
-    },
-]
+let todos = []
+
+class todo {
+    constructor(name, status) {
+    this.id = todos.length++;
+    this.name = name;
+    this.status = status;
+    }
+}
+
+const addTodos = () => {
+
+addTodos.addEventListener('click', () => {
+    
+});
+
+}
 
 const todoList = (todoItems) => {
     document.querySelector('.todoList')
@@ -48,10 +48,6 @@ const todoList = (todoItems) => {
 }
 
 todoList(todos);
-
-//addTodos.addEventListener('click', () => {
-
-//});
 
 const editTodo = () => {
 
