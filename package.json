@@ -2,9 +2,10 @@
   "name": "buildtoolassignment",
   "version": "1.0.0",
   "description": "Javascript build tools and bundlers are an important part of the web developers' tool kit. These tools allow the developer to take their code and prepare it for production. In this assignment, we will take a simple app, build it, and deploy it to production with 2 tools. First with Webpack and second with a bundler of your choice.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/DevelopingWriter96/BuildToolAssignment/issues"
   },
-  "homepage": "https://github.com/DevelopingWriter96/BuildToolAssignment#readme"
+  "homepage": "https://github.com/DevelopingWriter96/BuildToolAssignment#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
 }
