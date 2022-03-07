@@ -1,26 +1,31 @@
+const addTodos = document.querySelector('.addTodo')
+const newItem = document.querySelector('#newItem')
+
 function test(){
     console.log("Testing");
 }
 
 test();
 
-let todos = []
+let todos = [];
 
 class todo {
-    constructor(name, status) {
-    this.id = todos.length++;
+    constructor(name) {
+    this.id = todos.length+=1;
     this.name = name;
-    this.status = status;
+    this.complete = false;
     }
 }
 
-const addTodos = () => {
-
 addTodos.addEventListener('click', () => {
-    
+    let todoName = newItem.value
+    let customTodo = new todo(
+        todoName
+    )
+    todos.push(customTodo)
+    console.log(todos)
 });
 
-}
 
 const todoList = (todoItems) => {
     document.querySelector('.todoList')
